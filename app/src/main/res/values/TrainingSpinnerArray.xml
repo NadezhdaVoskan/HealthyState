@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="planets_array">
+        <item>Кардиотренировка</item>
+        <item>Силовая тренировка на верх тела</item>
+        <item>Силовая тренировка на низ тела</item>
+        <item>Силовая тренировка на все тело</item>
+        <item>Пилатес</item>
+        <item>Йога</item>
+        <item>Плаванье</item>
+        <item>Растяжка</item>
+    </string-array>
+</resources>

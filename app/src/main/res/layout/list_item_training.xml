@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dip"
+    android:orientation="horizontal"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/card_corner_rounded">
+    <ImageView
+        android:id="@+id/lblListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/workouttraining"
+
+        android:paddingTop="30dp"
+        android:layout_weight="0.4"
+        android:paddingBottom="40dp"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
+
+    <TextView
+        android:id="@+id/tvtraining"
+        android:layout_weight="0.1"
+        android:paddingTop="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Тренировка силовая на всё тело"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dip"
+        android:textColor="@color/black"
+        android:paddingBottom="5dp"
+        android:layout_marginRight="20dp"
+       android:paddingLeft="15dp" />
+    </LinearLayout>
+</LinearLayout>

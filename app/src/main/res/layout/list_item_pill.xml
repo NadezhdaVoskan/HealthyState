@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="145dip"
+    android:orientation="horizontal"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_corner_rounded"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+        <TextView
+            android:id="@+id/lblNamePill"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="название таблетки"
+            android:textColor="@color/black"
+            android:textSize="25dip"
+            android:textAlignment="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+
+        <TextView
+            android:id="@+id/lblCountPill"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="количество"
+            android:textSize="17dip"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
+
+        <TextView
+            android:id="@+id/lblTimePill"
+            android:text="время"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dip"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
+    </LinearLayout>
+</LinearLayout>

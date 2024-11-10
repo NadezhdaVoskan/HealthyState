@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notification.SplashScreenActivity">
+    
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/baseline_self_improvement_24"
+        android:layout_centerInParent="true"
+        android:id="@+id/splash"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/textName"
+        android:fontFamily="@font/abril_fatface"
+        android:text="HealthyState"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/btn_reg"
+        android:textSize="45sp"></TextView>
+
+</RelativeLayout>

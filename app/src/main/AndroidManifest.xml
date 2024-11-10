@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="Manifest.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthyState"
+        android:usesCleartextTraffic="true"
+        android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation"
+        tools:targetApi="31">
+        <activity
+            android:name=".Navigations.DetailsRecommend"
+            android:exported="false" />
+        <activity
+            android:name=".Navigations.Recommendations"
+            android:exported="false" />
+
+        <service
+            android:name=".Notification.MyNotificationService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".ChangeInfo.ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeInfo.ChangeDiaryTextDialog"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeInfo.ChangeFoodDialog"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeInfo.ChangePillDialog"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeInfo.ChangeTrainingDialog"
+            android:exported="false" />
+        <activity
+            android:name=".AddInfo.AddTrainingName"
+            android:exported="false" />
+        <activity
+            android:name=".AddInfo.AddToDoListDialog"
+            android:exported="false" />
+        <activity
+            android:name=".AddInfo.DelWaterDialog"
+            android:exported="false" />
+        <activity
+            android:name=".AddInfo.AddWaterDialog"
+            android:exported="false" />
+        <activity
+            android:name=".AddInfo.AddFoodDialog"
+            android:exported="false" />
+        <activity
+            android:name=".AddInfo.AddPillDialog"
+            android:exported="false" />
+        <activity
+            android:name=".Navigations.PersonalAccount"
+            android:exported="false" />
+        <activity
+            android:name=".AddInfo.AddDiaryTextDialog"
+            android:exported="false" />
+        <activity
+            android:name=".Pages.Training"
+            android:exported="false" />
+        <activity
+            android:name=".Pages.WaterBalance"
+            android:exported="false" />
+        <activity
+            android:name=".Pages.ToDoList"
+            android:exported="false" />
+        <activity
+            android:name=".Pages.Pill"
+            android:exported="false" />
+        <activity
+            android:name=".Pages.PersonalDiary"
+            android:exported="false" />
+        <activity
+            android:name=".Pages.Food"
+            android:exported="false" />
+        <activity
+            android:name=".Pages.CheckupDoctor"
+            android:exported="false" />
+        <activity
+            android:name=".Navigations.NavigationForThemes"
+            android:exported="false" />
+        <activity
+            android:name=".Notification.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AutoAndReg.MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver android:name=".Notification.AlarmReceiver" />
+    </application>
+
+</manifest>

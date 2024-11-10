@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="305dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:drawableLeft="@drawable/ic_people"
+            android:drawablePadding="10dp"
+            android:id="@+id/FirstNameReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Имя"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </EditText>
+        <EditText
+            android:id="@+id/SecondNameReg"
+            android:drawableLeft="@drawable/ic_people"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Фамилия"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FirstNameReg"
+            ></EditText>
+        <EditText
+            android:id="@+id/MiddleNameReg"
+            android:drawableLeft="@drawable/ic_people"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Отчество"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SecondNameReg"
+            ></EditText>
+        <EditText
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:id="@+id/EmailReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Почта"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MiddleNameReg"
+            ></EditText>
+        <EditText
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:id="@+id/PasswordReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Пароль"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EmailReg"
+            ></EditText>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/registrBut"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_margin="30dp"
+            android:layout_marginBottom="379dp"
+            android:backgroundTint="@color/btn_reg"
+            android:text="Зарегистрироваться"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PasswordReg"
+            tools:layout_editor_absoluteX="30dp"></com.google.android.material.button.MaterialButton>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

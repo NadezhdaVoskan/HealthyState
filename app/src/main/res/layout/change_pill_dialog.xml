@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="370dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:paddingTop="30dp"
+            android:id="@+id/txtPill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Название лекарства:"
+            android:textSize="20dp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints">
+        </TextView>
+        <EditText
+            android:id="@+id/Name_Pill"
+            android:layout_width="match_parent"
+            android:paddingLeft="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtPill">
+        </EditText>
+        <TextView
+            android:paddingTop="30dp"
+            android:id="@+id/txtCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Количество:"
+            android:textSize="20dp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/Name_Pill">
+        </TextView>
+        <EditText
+            android:id="@+id/CountPill"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtCount">
+        </EditText>
+        <TextView
+            android:paddingTop="30dp"
+            android:id="@+id/txtTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Время приёма:"
+            android:textSize="20dp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/CountPill">
+        </TextView>
+        <Button
+            android:id="@+id/PickTime"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:text="Выбрать время"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtTime">
+        </Button>
+        <TextView
+            android:id="@+id/txtDateStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Дата начала:"
+            android:paddingLeft="15dp"
+            android:textSize="20dp"
+            android:paddingTop="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/PickTime">
+        </TextView>
+        <EditText
+            android:id="@+id/idEdtDateStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="20dp"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingLeft="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtDateStart"
+            android:hint="Введите дату начала" />
+        <TextView
+            android:id="@+id/txtDateEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Дата окончания:"
+            android:paddingLeft="15dp"
+            android:textSize="20dp"
+            android:paddingTop="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/idEdtDateStart">
+        </TextView>
+        <EditText
+            android:id="@+id/idEdtDateEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="20dp"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingLeft="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtDateEnd"
+            android:hint="Введите дату окончания" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ChangeButPill"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_margin="30dp"
+            android:backgroundTint="@color/btn_reg"
+            android:text="Изменить"
+            app:cornerRadius="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/idEdtDateEnd"
+            tools:layout_editor_absoluteX="30dp"></com.google.android.material.button.MaterialButton>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/DelButPill"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_margin="30dp"
+            android:backgroundTint="@color/btn_reg"
+            android:text="Удалить"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ChangeButPill"
+            tools:layout_editor_absoluteX="30dp"></com.google.android.material.button.MaterialButton>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
